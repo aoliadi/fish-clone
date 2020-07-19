@@ -1,0 +1,217 @@
+/* aoliadi,2020 */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
+
+/* <i class="fas fa-pencil-alt"></i>
+<i class="far fa-envelope"></i>
+<i class="fa fa-desktop" aria-hidden="true"></i>
+<i class="fas fa-desktop"></i>
+
+#6c9c2e olivedrab
+#1c58a2 darkslateblue
+#505050 darkslategray */
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    border:none;
+    outline:none;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color:#505050;
+    font-weight:200;
+}
+
+/* 
+======================
+SIMILAR ATTRIBUTES 
+======================
+ */
+
+header, main, footer {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 5px;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+
+main, footer {
+    width:75%;
+    margin:10px auto;
+    padding:15px 15px;
+}
+
+/* 
+=====================================
+FOR ALL HEADINGS 
+=====================================
+ */
+
+ h1, h2, h3, h4, h5, h6 {
+    font-weight:400;
+}
+
+/* 
+=====================================
+HEADER 
+=====================================
+ */
+
+ header {
+    align-items: center;
+    font-size:20px;
+}
+
+header img {
+    width:auto;
+    height:50px;
+}
+
+/* 
+=====================================
+OVERALL MAIN CONTENT STYLING 
+=====================================
+ */
+
+ main {
+    flex-wrap: wrap;
+     justify-content: center;
+}
+
+.login-container, #fieldsets-overall {
+    margin: 10px 5px;
+    padding: 25px;
+    line-height: 28px;
+    width: 560px;
+}
+
+.login-container h3, .login-container p {
+    margin-bottom:10px;
+}
+
+/* 
+=====================================
+MAIN ---- CONTAINER 2
+=====================================
+ */
+
+.fieldsets {
+    border:1px solid rgb(131, 128, 128);
+    margin-bottom:15px;
+    padding:25px;
+    border-radius:5px;
+}
+
+.fieldsets button {
+    padding:10px;
+    width:120px;
+    margin-top:10px;
+    background: #6c9c2e;
+    border:2px solid #505050;
+    color:#fff;
+    border-radius:5px;
+}
+
+.fieldsets button:hover {
+    background-color:#fff;
+    color:#505050;
+    cursor:pointer;
+}
+
+.fieldsets p {
+    font-size:18px;
+}
+
+/* 
+=====================================
+USERNAME AND PASSWORD INPUT FOR LOGIN 
+=====================================
+ */
+
+ .form-container input[type="text"], 
+ .form-container input[type="password"], 
+ .form-container input[type="submit"]    {
+     padding:10px;
+     outline:none;
+     border-radius:5px;
+     font-family: 'Josefin Sans', sans-serif;
+     color:#505050;
+     font-weight:400;
+ }
+ 
+ .form-container input[type="text"] {
+     margin-top: 15px;
+ }
+ 
+ .form-container input[type="text"], 
+ .form-container input[type="password"] {
+     border:1px solid rgb(131, 128, 128);
+     margin-bottom: 25px;
+     width:100%;
+ }
+
+ .form-container input[type="text"]:focus, 
+ .form-container input[type="password"]:focus {
+     border:2px solid #1c58a2;
+ }
+ 
+ .form-container input[type="submit"]    {
+     background-color: #1c58a2; /* darkslateblue */
+     border:2px solid #505050; /* darkslategray */
+     color:#fff;
+     width:80px;
+ }
+
+ .form-container input[type="submit"]:hover    {
+    background-color:#fff;
+    color:#505050;
+    cursor:pointer;
+}
+
+/* 
+=====================================
+                FOOTER
+=====================================
+ */
+
+ footer {
+     border-top:1px solid #f0f0f0;
+ }
+ footer p {
+    margin-left: 5px;
+}
+
+div.icon {
+    display:flex;
+    flex-flow:row wrap;
+}
+
+ /* 
+=====================================
+FOR SMALLER DEVICES
+=====================================
+ */
+
+ @media (max-width: 1100px) {
+     footer {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     footer p {
+         margin-top: 5px;
+         margin-bottom: 5px;
+         margin-left: 5px;
+     }
+     header {
+         justify-content: center;
+     }
+     header > img {
+         display: none;
+     }
+}
