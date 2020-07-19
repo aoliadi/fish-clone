@@ -211,7 +211,7 @@ FOR SMALLER DEVICES
      header {
          justify-content: center;
      }
-     header > img {
+     header > img, header > h3  {
          display: none;
      }
 }
